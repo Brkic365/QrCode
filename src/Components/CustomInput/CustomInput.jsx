@@ -33,7 +33,7 @@ function CustomInput({ names, isRequired, buttonText, parentCallback }) {
     text = Array.isArray(names) ? names[i] : names;
     type = "text";
 
-    required = !text.includes("optional");
+    required = !text.includes("nije obavezno");
     if (isRequired) required = isRequired;
 
     for (const [containing_word, typeValue] of Object.entries(types)) {
